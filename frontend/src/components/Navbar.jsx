@@ -11,19 +11,19 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20 items-center">
           {/* Logo */}
-          <div className="flex-shrink-0 flex items-center cursor-pointer">
+          <Link to="/" className="flex-shrink-0 flex items-center cursor-pointer">
             <ShoppingBag className="h-8 w-8 text-primary dark:text-primary-dark mr-2" />
             <span className="font-bold text-2xl tracking-tight text-themeText dark:text-themeText-dark">
               Cake<span className="text-primary dark:text-primary-dark">Tools</span>
             </span>
-          </div>
+          </Link>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8 items-center">
-            <a href="#" className="text-themeText dark:text-themeText-dark hover:text-primary dark:hover:text-primary-dark font-medium transition-colors">Home</a>
-            <a href="#" className="text-themeText dark:text-themeText-dark hover:text-primary dark:hover:text-primary-dark font-medium transition-colors">Shop</a>
-            <a href="#" className="text-themeText dark:text-themeText-dark hover:text-primary dark:hover:text-primary-dark font-medium transition-colors">About</a>
-            <a href="#" className="text-themeText dark:text-themeText-dark hover:text-primary dark:hover:text-primary-dark font-medium transition-colors">Contact</a>
+            <Link to="/shop/home" className="text-themeText dark:text-themeText-dark hover:text-primary dark:hover:text-primary-dark font-medium transition-colors">Home</Link>
+            <Link to="/shop/categories" className="text-themeText dark:text-themeText-dark hover:text-primary dark:hover:text-primary-dark font-medium transition-colors">Shop</Link>
+            <Link to="/shop/about" className="text-themeText dark:text-themeText-dark hover:text-primary dark:hover:text-primary-dark font-medium transition-colors">About</Link>
+            <Link to="/shop/contact" className="text-themeText dark:text-themeText-dark hover:text-primary dark:hover:text-primary-dark font-medium transition-colors">Contact</Link>
           </div>
 
           {/* Actions */}
